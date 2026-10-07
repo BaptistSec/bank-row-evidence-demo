@@ -1,0 +1,1 @@
+Input rejected: invalid.csv:2: expected ASCII decimal amount such as -12.00
