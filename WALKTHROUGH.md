@@ -41,13 +41,19 @@ The two rows in main.csv could be genuine purchases. Their running balances diff
 
 You need Python 3 installed to run this example. Open a terminal, the application where you type commands. Move to the main folder of the downloaded and unzipped demonstration, then run the supplied repeat_candidates.py program:
 
+Swipe code sideways if a line is cut off.
+
 ```sh
-python3 repeat_candidates.py examples/main.csv examples/overlap.csv
+python3 repeat_candidates.py \
+examples/main.csv \
+examples/overlap.csv
 ```
 
 Actual result from the demonstration: one candidate pair, main.csv record 2 and overlap.csv record 2, reason "matching balance". Record numbers count the rows the program reads, including the column-name row. They are not necessarily the same as text line numbers, because a quoted value can span lines.
 
 The summary is:
+
+One pair needs review. No rows were removed.
 
 ```text
 1 candidate pairs. No rows removed. Review original statements.
@@ -69,10 +75,14 @@ Date,Description,Amount
 Run:
 
 ```sh
-python3 repeat_candidates.py examples/main.csv examples/no_balance.csv
+python3 repeat_candidates.py \
+examples/main.csv \
+examples/no_balance.csv
 ```
 
 Actual result: two pairs, both labelled "balance unavailable". The no-balance row matches both coffees by date, description and amount. The script cannot distinguish them from those fields alone.
+
+Two pairs need review because balance information is missing. No rows were removed.
 
 ```text
 2 candidate pairs. No rows removed. Review original statements.
@@ -94,10 +104,14 @@ Date,Description,Amount,Balance
 Run:
 
 ```sh
-python3 repeat_candidates.py examples/main.csv examples/reversal.csv
+python3 repeat_candidates.py \
+examples/main.csv \
+examples/reversal.csv
 ```
 
 Actual result:
+
+No matching pairs were found. No rows were removed.
 
 ```text
 0 candidate pairs. No rows removed. Review original statements.
@@ -117,10 +131,13 @@ Date,Description,Amount,Balance
 Run:
 
 ```sh
-python3 repeat_candidates.py examples/invalid.csv
+python3 repeat_candidates.py \
+examples/invalid.csv
 ```
 
 Actual result: the program returns status code 2, meaning it rejected the input. It produces no JSON result and prints this error:
+
+The input was rejected because an amount has too many decimal places.
 
 ```text
 Input rejected: invalid.csv:2: expected ASCII decimal amount such as -12.00
