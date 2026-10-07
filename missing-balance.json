@@ -1,0 +1,28 @@
+[
+  {
+    "earlier": {
+      "file": "/tmp/csv-demonstration/examples/main.csv",
+      "record": 2,
+      "balance": "97.00"
+    },
+    "later": {
+      "file": "/tmp/csv-demonstration/examples/no_balance.csv",
+      "record": 2,
+      "balance": null
+    },
+    "reason": "balance unavailable"
+  },
+  {
+    "earlier": {
+      "file": "/tmp/csv-demonstration/examples/main.csv",
+      "record": 3,
+      "balance": "94.00"
+    },
+    "later": {
+      "file": "/tmp/csv-demonstration/examples/no_balance.csv",
+      "record": 2,
+      "balance": null
+    },
+    "reason": "balance unavailable"
+  }
+]
