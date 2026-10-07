@@ -143,9 +143,9 @@ sha256sum examples/*.csv > after.sha256
 diff before.sha256 after.sha256
 ```
 
-The comparison found no differences. The supplied records include both fingerprint lists and the program's results. This checks that the input files did not change in this exercise. It does not promise that another program will leave them unchanged.
+The sha256sum commands calculate SHA-256 file fingerprints. The diff command compares the two lists. The comparison found no differences. The supplied records include both fingerprint lists and the program's results. This checks that the input files did not change in this exercise. It does not promise that another program will leave them unchanged.
 
-The program displays results and errors in the terminal. If you use a command to save that text to a file, choose a new report filename, never an input filename. The terminal can overwrite the destination before the program reads its input.
+The program displays results and errors in the terminal. Results go to standard output (stdout), and summaries and errors go to standard error (stderr), two separate output channels. If you use a command to save that text to a file, choose a new report filename, never an input filename. The terminal can overwrite the destination before the program reads its input.
 
 ## What was tested
 
