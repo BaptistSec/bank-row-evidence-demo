@@ -1,0 +1,15 @@
+[
+  {
+    "earlier": {
+      "file": "/tmp/csv-demonstration/examples/main.csv",
+      "record": 2,
+      "balance": "97.00"
+    },
+    "later": {
+      "file": "/tmp/csv-demonstration/examples/overlap.csv",
+      "record": 2,
+      "balance": "97.00"
+    },
+    "reason": "matching balance"
+  }
+]
