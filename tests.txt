@@ -1,0 +1,32 @@
+test_ambiguous_date_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_blank_balance_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_blank_description_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_bom_and_quoted_comma (test_repeat_candidates.RepeatTests) ... ok
+test_both_missing_balance (test_repeat_candidates.RepeatTests) ... ok
+test_cli_bad_input_no_partial_stdout (test_repeat_candidates.RepeatTests) ... ok
+test_cli_file_missing (test_repeat_candidates.RepeatTests) ... ok
+test_cli_success_json_and_unchanged (test_repeat_candidates.RepeatTests) ... ok
+test_cross_file_different_balance (test_repeat_candidates.RepeatTests) ... ok
+test_cross_file_same_balance (test_repeat_candidates.RepeatTests) ... ok
+test_description_case_not_normalised (test_repeat_candidates.RepeatTests) ... ok
+test_duplicate_headers_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_extra_column_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_full_width_digits_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_infinity_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_invalid_day_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_leading_zero_and_negative_zero_are_allowed (test_repeat_candidates.RepeatTests) ... ok
+test_missing_balance_only_candidate (test_repeat_candidates.RepeatTests) ... ok
+test_missing_column_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_multiline_record_number (test_repeat_candidates.RepeatTests) ... ok
+test_nan_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_original_bytes_unchanged (test_repeat_candidates.RepeatTests) ... ok
+test_same_file_identical_rows_not_flagged (test_repeat_candidates.RepeatTests) ... ok
+test_same_path_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_three_decimals_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_unicode_digits_rejected (test_repeat_candidates.RepeatTests) ... ok
+test_unterminated_quote_rejected (test_repeat_candidates.RepeatTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.010s
+
+OK
