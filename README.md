@@ -4,8 +4,12 @@ This free example uses made-up bank records. It marks matching rows in different
 
 You need Python installed to run it. Open a command window in the folder containing `repeat_candidates.py`, then run:
 
+Swipe code sideways if a line is cut off.
+
 ```sh
-python3 repeat_candidates.py examples/main.csv examples/overlap.csv
+python3 repeat_candidates.py \
+examples/main.csv \
+examples/overlap.csv
 python3 -m unittest -v
 ```
 
